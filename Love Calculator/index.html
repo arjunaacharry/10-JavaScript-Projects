@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Love Calculator</h2>
+    <div class="love-calculator">
+        <form id="loveForm">
+            <label for="name-1">Your Name</label>
+            <input type="text" name="name1" id="name-1" placeholder="Enter your name">
+            <label for="name-2">Lover's Name</label>
+            <input type="text" name="name2" id="name-2" placeholder="Enter lover's name">
+            <button type="button" onclick="calculateLove()">Calculate</button>
+        </form>
+    </div>
+</div>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Love Score</h2>
+        <div id="popup-names" class="popup-names"></div>
+        <div id="popup-result" class="popup-result"></div>
+        <button onclick="tryAgain()">Try Again</button>
+        <button onclick="shareResult()">Share</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
