@@ -83,6 +83,28 @@ button:hover {
     background-color: #d81b60;
 }
 
+/* Loader Styles */
+.loader {
+    display: none;
+    border: 6px solid #f3f3f3; /* Light grey */
+    border-top: 6px solid #e91e63; /* E91E63 (pink) */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px; /* Adjust position to center vertically and horizontally */
+    margin-left: -20px; /* Adjust position to center vertically and horizontally */
+    z-index: 2; /* Ensure it's above other content */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 /* Popup Styles */
 .popup {
     display: none;
